@@ -7,7 +7,7 @@ To run, build the project and run `Runner.cs`, Or run the unit tests present in 
 The solution reduces the example list from 8282 entries down to 2209 entries.
 I'm not sure what best practice for output data is in Visual Studio solutions, but the output is written to output.json in the default directory after building and running in debug mode: `/bin/Debug/net5.0/output.json`. It has also been included in the root directory here for review.
 
-Note that the function `GenerateStopWords` is unused. I have kept it because it might be the more useful solution for much larger lists of company names. In this case, business suffixes such as "llc" were not more frequent than other final words such as "grill" or "times", so a list of business suffixes was used instead.
+Most of the solution's logic is contained in `XapienText/CompaniesReducer.cs`. Note that the function `GenerateStopWords` is unused. I have kept it because it might be the more useful solution for much larger lists of company names. In this case, business suffixes such as "llc" were not more frequent than other final words such as "grill" or "times", so a list of business suffixes was used instead.
 
 ## Edge Cases Handled
 1. Case insensitive duplicates (all text was made lowercase to this end).
