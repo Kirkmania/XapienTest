@@ -2,7 +2,7 @@
 Solution to technical test by George Kirkman.
 
 This solution takes a dirty list of company names from a file called `org_names.json` with duplicate entries and produces a file (output.json) containing only unique company names.
-To run, build the project and run `Runner.cs`, Or run the unit tests present in `CompaniesReducerTest.cs`.
+To run, build the project and run `Runner.cs`, Or run the unit tests present in `CompaniesReducerTest.cs`. The `.sln` file for Visual Studio is present in `/XapienTest/`.
 
 The solution reduces the example list from 8282 entries down to 2209 entries.
 I'm not sure what best practice for output data is in Visual Studio solutions, but the output is written to output.json in the default directory after building and running in debug mode: `/bin/Debug/net5.0/output.json`. It has also been included in the root directory here for review.
