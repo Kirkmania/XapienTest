@@ -19,3 +19,6 @@ Note that the function `GenerateStopWords` is unused. I have kept it because it 
 1. Spelling errors - this could perhaps be solved with similarity scores or clustering, but seems like overkill and might combine distinct companies.
 2. Website URLs - could perhaps use regex to isolate domain name from url text; however, the url examples might have "wanted" the company mentioned in the article. Since there very few of these, these cases were ignored.
 3. Different numbers in similar company names - in some cases these created effective duplicates (e.g. `Olswang Directors 1 Ltd` vs `Olswang Directors 2 Ltd`), while in others these were needed to differentiate company names e.g. `BBC One`, `BBC 2`. I assumed that these should remain different entries.
+
+## Unit Test results
+![Image of Unit Test results](https://i.imgur.com/kOTTS7L.png)
